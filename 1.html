@@ -3,53 +3,101 @@
 	<head>
 		<meta charset=utf-8>
 		<title>1</title>
+		<style>
+			body > ol > li {
+				margin: 40px 0;
+			}
+			li {
+				margin: 20px 0;
+			}
+		</style>
 		<script src=http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML></script>
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 		</script>
 	</head>
 	<body>
-		<ol start=6>
+		<ol start=5>
+			<li>
+				<ol type=a>
+					<li>$\lim\limits_{x \to 1} f(x) = 2$</li>
+					<li>$\lim\limits_{x \to 3^{-}} f(x) = 1$</li>
+					<li>$\lim\limits_{x \to 3^{+}} f(x) = 4$</li>
+					<li>$\lim\limits_{x \to 3} f(x)$ DNE because $\lim\limits_{x \to 3^{-}} f(x) \neq \lim\limits_{x \to 3^{+}} f(x)$</li>
+					<li>$f(3) = 3$</li>
+				</ol>
+			</li>
 			<li>
 				<ol type=a>
 					<li>
-						$\lim_{x \to -3^{-}} h(x) = 4$
+						$\lim\limits_{x \to -3^{-}} h(x) = 4$
 					</li>
 					<li>
-						$\lim_{x \to -3^{+}} h(x) = 4$
+						$\lim\limits_{x \to -3^{+}} h(x) = 4$
 					</li>
 					<li>
-						$\lim_{x \to -3} h(x) = 4$
+						$\lim\limits_{x \to -3} h(x) = 4$
 					</li>
 					<li>
 						$h(-3) = undefined$
 					</li>
 					<li>
-						$\lim_{x \to 0^{-}} h(x) = 1$
+						$\lim\limits_{x \to 0^{-}} h(x) = 1$
 					</li>
 					<li>
-						$\lim_{x \to 0^{+}} h(x) = -1$
+						$\lim\limits_{x \to 0^{+}} h(x) = -1$
 					</li>
 					<li>
-						$\lim_{x \to 0} h(x)$ DNE because $\lim_{x \to 0^{-}} h(x) \neq \lim_{x \to 0^{+}} h(x)$
+						$\lim\limits_{x \to 0} h(x)$ DNE because $\lim\limits_{x \to 0^{-}} h(x) \neq \lim\limits_{x \to 0^{+}} h(x)$
 					</li>
 					<li>
 						$h(0) = 1$
 					</li>
 					<li>
-						$\lim_{x \to 2} h(x) = 2$
+						$\lim\limits_{x \to 2} h(x) = 2$
 					</li>
 					<li>
 						$h(2) = undefined$
 					</li>
 					<li>
-						$\lim_{x \to 5^{+}} h(x) = 2$
+						$\lim\limits_{x \to 5^{+}} h(x) = 2$
 					</li>
 					<li>
-						$\lim_{x \to 5^{-}} h(x)$ DNE because of inifinite oscillation of the values of $h(x)$ between 2 and 4 as $x \to 5^{-}$
+						$\lim\limits_{x \to 5^{-}} h(x)$ DNE because of inifinite oscillation of the values of $h(x)$ between 2 and 4 as $x \to 5^{-}$
 					</li>
 				</ol>
 			</li>
+		</ol>
+		<ol start=9>
+			<li>
+				<ol type=a>
+					<li>$\lim\limits_{x \to -7} f(x) = -\infty$</li>
+					<li>$\lim\limits_{x \to -3} f(x) = \infty$</li>
+					<li>$\lim\limits_{x \to 0} f(x) = \infty$</li>
+					<li>$\lim\limits_{x \to 6^{-}} f(x) = -\infty$</li>
+					<li>$\lim\limits_{x \to 6^{+}} f(x) = \infty$</li>
+					<li>The vertical asymptotes are at $x = -7, x = -3, x = 0, x = 6$</li>
+				</ol>
+			</li>
+		</ol>
+		<ol start=12>
+			<li>
+				$f(x) = \left\{
+					\begin{array}{lr}
+		       1 + \sin x & x < 0\\
+		       \cos x & 0 \leq x \leq \pi\\
+		       \sin x & x > \pi 
+		     	\end{array}
+	   		\right.$<br>
+	   		<br>
+	   		The values of $a$ for which $\lim\limits_{x \to a} f(x)$ exist are: $a = 0$
+ 			</li>
+		</ol>
+		<ol start=22>
+			<li>$\lim\limits_{h \to 0} \frac{(2 + h)^5 - 32}{h} = 80$ by guessing from the values of $h$ near $0$.</li>
+		</ol>
+		<ol start=34>
+			<li>$\lim\limits_{x \to \pi^{-}} \cot x = -\infty$</li>
 		</ol>
 	</body>
 </html>
