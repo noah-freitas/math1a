@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>2</title>
+		<style>
+			body {
+				color: #40342A;
+			}
+			h1 {
+				color: #7A422E;
+			}
+			h2 {
+				color: #594732;
+			}
+			#container > ol > li {
+				margin: 40px 0;
+			}
+			li {
+				margin: 20px 0;
+			}
+			#container > ol {
+				margin: 20px;
+				padding: 15px 50px;
+				background: #D4CA9A;
+				border: 1px solid #7A422E;
+				box-shadow: 1px 1px 1em #7A422E;
+			}
+			#container > ol:nth-of-type(even) {
+				background: #EDE5AE;
+			}
+			#container {
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+				-o-column-count: 2;
+				-ms-column-count: 2;
+				column-count: 2;
+			}
+		</style>
+		<script src=http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {
+					inlineMath: [
+						['$','$'],
+						['\\(','\\)']
+					]
+				},
+				TeX: {
+  				extensions: ["cancel.js"]
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Assignment #2: 2.3</h1>
+		<h2>Required: 8, 20, 32, 40, 46</h2>
+		<h2>Optional: 1, 27, 31, 43, 51, 53, 62</h2>
+		<div id="container">
+			<ol start=8>
+				<li>
+					<ol type=i>
+						<li>
+							$$\lim_{t \to 2} \left({\frac{t^2 - 2}{t^3 - 3t + 5}}\right)^2$$
+						</li>
+						<li>
+							By Limit Law #6
+							$$\left(\lim_{t \to 2} {\frac{t^2 - 2}{t^3 - 3t + 5}}\right)^2$$
+						</li>
+						<li>
+							By Limit Law #5
+							$$\left({\frac{\lim_{t \to 2} t^2 - 2}{\lim_{t \to 2} t^3 - 3t + 5}}\right)^2$$
+						</li>
+						<li>
+							By Direct Substitution Property
+							$$\left(\frac{2^2 - 2}{2^3 - 3(2) + 5}\right)^2$$
+						</li>
+						<li>
+							$$\left(\frac{2}{7}\right)^2$$
+						</li>
+						<li>
+							$$\frac{4}{49}$$
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=20>
+				<li>
+					<ol type=i>
+						<li>
+							$$\lim_{t \to 1} \frac{t^4 - 1}{t^3 - 1}$$
+						</li>
+						<li>
+							$$\lim_{t \to 1} \frac{(t^2 - 1)(t^2 + 1)}{(t - 1)(t^2 + t + 1)}$$
+						</li>
+						<li>
+							$$\lim_{t \to 1} \frac{\cancel{(t - 1)}(t + 1)(t^2 + 1)}{\cancel{(t - 1)}(t^2 + t + 1)}$$
+						</li>
+						<li>
+							By Direct Substitution Property
+							$$\frac{(1 + 1)(1^2 + 1)}{(1^2 + 1 + 1)}$$
+						</li>
+						<li>
+							$$\frac{4}{3}$$
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>
