@@ -30,11 +30,14 @@
 				background: #EDE5AE;
 			}
 			#container {
-				-moz-column-count: 2;
+				width: 50%;
+				margin: 0 auto;
+				/*-moz-column-count: 2;
 				-webkit-column-count: 2;
 				-o-column-count: 2;
 				-ms-column-count: 2;
 				column-count: 2;
+				*/
 			}
 		</style>
 		<script src=http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML></script>
@@ -102,6 +105,83 @@
 						</li>
 						<li>
 							$$\frac{4}{3}$$
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=32>
+				<li>
+					<ol type=i>
+						<li>
+							$$\lim_{h \to 0} \frac{\frac{1}{(x + h)^2} - \frac{1}{x^2}}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \left(\frac{1}{(x + h)^2} - \frac{1}{x^2}\right) * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \left(\left(\frac{1}{(x + h)^2} - \frac{1}{x^2}\right) * \frac{(x + h)^2(x^2)}{(x + h)^2(x^2)}\right) * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \left(\frac{x^2}{(x^2)(x + h)^2} - \frac{(x + h)^2}{(x^2)(x + h)^2}\right) * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{x^2 - (x + h)^2}{(x^2)(x + h)^2} * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{x^2 - (x^2 + 2hx + h^2)}{(x^2)(x + h)^2} * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{\cancel{x^2} - \cancel{x^2} - 2hx - h^2}{(x^2)(x + h)^2} * \frac{1}{h}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{\cancel{h}(-2x - h)}{(x^2)(x + h)^2} * \frac{1}{\cancel{h}}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{-2x - h}{(x^2)(x^2 + 2hx + h^2)}$$
+						</li>
+						<li>
+							$$\lim_{h \to 0} \frac{-2x - h}{x^4 + 2hx^3 + h^2x^2}$$
+						</li>
+						<li>
+							By Direct Substitution
+							$$\frac{-2x - 0}{x^4 + 2(0)x^3 + 0^2x^2}$$
+						</li>
+						<li>
+							$$\frac{-2x}{x^4 + 0 + 0}$$
+						</li>
+						<li>
+							$$\frac{-2\cancel{x}}{x^{\cancel{4}3}}$$
+						</li>
+						<li>
+							$$\frac{-2}{x^3}$$
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=40>
+				<li>
+					<ol type=i>
+						<li>
+							Prove that the limit exists: $$\lim_{x \to 0^{+}} \sqrt{x} e^{\sin{\frac{\pi}{x}}} = 0$$
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=46>
+				<li>
+					<ol type=i>
+						<li>
+							$$\lim_{x \to 0^{+}} \left(\frac{1}{x} - \frac{1}{|x|} \right)$$
+						</li>
+						<li>
+							Since $|x| = x, x \geq 0$ and x is approaching 0 from above, $|x| = x$
+							$$\lim_{x \to 0^{+}} \left(\frac{1}{x} - \frac{1}{x} \right)$$
+						</li>
+						<li>
+							$$\lim_{x \to 0^{+}} \left(0 \right)$$
+						</li>
+						<li>
+							$$0$$
 						</li>
 					</ol>
 				</li>
