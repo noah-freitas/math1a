@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>3</title>
+		<link rel=stylesheet href=css/jsxgraph.css>
+		<style>
+			body {
+				color: #40342A;
+			}
+			h1 {
+				color: #7A422E;
+			}
+			h2 {
+				color: #594732;
+			}
+			#container > ol > li {
+				margin: 40px 0;
+			}
+			li {
+				margin: 20px 0;
+			}
+			#container > ol {
+				margin: 20px;
+				padding: 15px 50px;
+				background: #D4CA9A;
+				border: 1px solid #7A422E;
+				box-shadow: 1px 1px 1em #7A422E;
+			}
+			#container > ol:nth-of-type(even) {
+				background: #EDE5AE;
+			}
+			#container {
+				width: 50%;
+				margin: 0 auto;
+				/*-moz-column-count: 2;
+				-webkit-column-count: 2;
+				-o-column-count: 2;
+				-ms-column-count: 2;
+				column-count: 2;
+				*/
+			}
+		</style>
+		<script src=http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.95/jsxgraphcore.js></script>
+		<script src=http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML></script>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {
+					inlineMath: [
+						['$','$'],
+						['\\(','\\)']
+					]
+				},
+				TeX: {
+					extensions: [
+						"AMSmath.js",
+						"AMSsymbols.js",
+						"cancel.js"
+					]
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Assignment #3: 2.5</h1>
+		<h2>Required: 4, 20, 24, 42, 58</h2>
+		<div id="container">
+			<ol start=4>
+				<li>
+					<ol type=i>
+						<li>
+							#4
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=20>
+				<li>
+					<ol type=i>
+						<li>
+							#20
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=24>
+				<li>
+					<ol type=i>
+						<li>
+							#24
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=42>
+				<li>
+					<ol type=i>
+						<li>
+							#42
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=58>
+				<li>
+					<ol type=i>
+						<li>
+							#58
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+		<h2>Optional: 7, 38, 45, 46, 47, 53, 64</h2>
+		<div id="container">
+			<ol start=7>
+				<li>
+					<ol type=i>
+						<li>
+							Sketch the graph of a function <em>f</em> that is continuous except for the stated discontiunity:<br>
+							Removable discontinuity at 3, jump discontinuity at 5.
+							$$
+								f(x) =
+								\begin{cases}
+									-1 & \text{if }x = 3 \\
+									x + 4 & \text{if }x < 5 \\
+									x + 5 & \text{if }x \geq 5
+								\end{cases}
+							$$
+							<div id="graph7" class="jxgbox" style="width:500px; height:500px;"></div>
+							<script>
+								(function () {
+									var board = JXG.JSXGraph.initBoard('graph7', {
+										boundingbox: [-5, 15, 10, -5],
+										axis: true,
+										showCopyright: false
+									});
+									board.create('functiongraph', [
+										function(x) {
+											if (x === 3) {
+												return null;
+											} else if (x < 5) {
+												return x + 4;
+											} else {
+												return x + 5;
+											}
+										}
+									]);
+									board.create('point', [3, -1], {
+										name: '',
+										strokecolor: 'none',
+										fillcolor: 'blue'
+									});
+									board.create('point', [5, 9], {
+										name: '',
+										strokecolor: 'blue',
+										fillcolor: 'none'
+									});
+									board.create('point', [3, 7], {
+										name: '',
+										strokecolor: 'blue',
+										fillcolor: 'none'
+									});
+									board.create('point', [5, 10], {
+										name: '',
+										strokecolor: 'none',
+										fillcolor: 'blue'
+									});
+								}());
+							</script>
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=38>
+				<li>
+					<ol type=i>
+						<li>
+							#38
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=45>
+				<li>
+					<ol type=i>
+						<li>
+							#45
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=46>
+				<li>
+					<ol type=i>
+						<li>
+							#46
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=47>
+				<li>
+					<ol type=i>
+						<li>
+							#47
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=53>
+				<li>
+					<ol type=i>
+						<li>
+							#53
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<ol start=64>
+				<li>
+					<ol type=i>
+						<li>
+							#64
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>
